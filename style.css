@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: darkblue;
+    color: white;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: yellowgreen;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: rgb(26, 4, 87);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: yellow;
+    color: lightgoldenrodyellow;
+    transition-duration: 3s;
+    width: 200px;
+    font-size: 30px;
+    font-size-adjust: 200px;
+
+  
+}
+.navbar a.activ {
+    background-color: rgb(255, 255, 255);
+    color: rgb(150, 43, 43);
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+}
+
+.side{
+    flex: 30%;
+    background-color: lightsalmon;
+    padding: 20px;
+}
+
+.main{
+    flex: 70%;
+    background-color: maroon;
+    padding: 20px;
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+
+}
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: indianred;
+}
+
+@media screen and (max width: 700px){
+    .row {
+        flex-direction: column;
+    }
+    .side{
+        background-color: red;
+    }
+    .navbar a right{
+        
+
+    }
+}
+
+@media screen and(max width: 400px){
+    .navbar a{
+        float: none;
+        width: 100%;
+        transition-duration: 2s;
+
+    }
+
+
+@media screen and(max width: 500px){
+    .main a{
+        transition-duration: 2s;
+        color: lawngreen;
+
+    }
+
+}
